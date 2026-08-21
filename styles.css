@@ -206,3 +206,80 @@ h1 {
   .video { margin-top: 52px; }
   .footer-links { gap: 10px 16px; }
 }
+
+
+.tools {
+  width: min(960px, 100%);
+}
+
+.tools h1 {
+  margin-bottom: 30px;
+  font-size: clamp(52px, 9vw, 108px);
+  line-height: .9;
+}
+
+.tools-intro {
+  max-width: 720px;
+  margin: 0 0 50px;
+  font-size: clamp(18px, 2.2vw, 24px);
+  line-height: 1.5;
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.tool-card {
+  min-height: 330px;
+  padding: clamp(26px, 4vw, 42px);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, .18);
+}
+
+.tool-type {
+  margin: 0 0 28px;
+  color: #476141;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.tool-card h2 {
+  margin: 0 0 18px;
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 590;
+  letter-spacing: -.04em;
+}
+
+.tool-card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.tool-link {
+  align-self: flex-start;
+  margin-top: auto;
+  padding-top: 34px;
+  color: var(--ink);
+  font-weight: 700;
+  text-underline-offset: 4px;
+}
+
+.affiliate-note {
+  max-width: 760px;
+  margin: 34px 0 0;
+  color: rgba(23, 27, 25, .72);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 720px) {
+  .tool-grid { grid-template-columns: 1fr; }
+  .tool-card { min-height: 290px; }
+}
