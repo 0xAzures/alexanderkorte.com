@@ -283,3 +283,120 @@ h1 {
   .tool-grid { grid-template-columns: 1fr; }
   .tool-card { min-height: 290px; }
 }
+
+
+.newsletter {
+  width: min(900px, 100%);
+}
+
+.newsletter h1 {
+  margin-bottom: 34px;
+  font-size: clamp(60px, 11vw, 138px);
+  line-height: .86;
+}
+
+.newsletter-intro {
+  max-width: 740px;
+  margin: 0 0 48px;
+  font-size: clamp(19px, 2.3vw, 27px);
+  line-height: 1.5;
+}
+
+.newsletter-form {
+  max-width: 740px;
+  padding-top: 34px;
+  border-top: 1px solid var(--line);
+}
+
+.newsletter-field {
+  display: grid;
+  gap: 10px;
+}
+
+.newsletter-field label {
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.newsletter-field input {
+  width: 100%;
+  min-height: 64px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: rgba(255, 255, 255, .35);
+  color: var(--ink);
+  font: inherit;
+  font-size: 18px;
+}
+
+.newsletter-field input:focus {
+  outline: 2px solid #476141;
+  outline-offset: 2px;
+}
+
+.newsletter-privacy {
+  margin: 18px 0 0;
+  color: rgba(23, 27, 25, .72);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.newsletter-privacy a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+.newsletter-submit {
+  min-height: 56px;
+  margin-top: 24px;
+  padding: 14px 22px;
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  background: var(--ink);
+  color: var(--paper);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.newsletter-submit:hover,
+.newsletter-submit:focus-visible {
+  background: #476141;
+  border-color: #476141;
+}
+
+.newsletter-submit[disabled] {
+  cursor: wait;
+  opacity: .7;
+}
+
+.newsletter-status {
+  max-width: 680px;
+  margin-top: 34px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.newsletter-confirmation {
+  width: min(760px, 100%);
+}
+
+.newsletter-confirmation h1 {
+  margin-bottom: 34px;
+  font-size: clamp(52px, 9vw, 108px);
+  line-height: .9;
+}
+
+.newsletter-confirmation p {
+  max-width: 650px;
+  font-size: clamp(18px, 2vw, 23px);
+  line-height: 1.6;
+}
+
+.newsletter-confirmation a {
+  color: inherit;
+  text-underline-offset: 4px;
+}
