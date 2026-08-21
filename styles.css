@@ -25,6 +25,7 @@ header, footer {
   padding: 25px 0;
   display: flex;
   justify-content: space-between;
+  gap: 24px;
   border-color: var(--line);
   font-size: 13px;
 }
@@ -32,6 +33,24 @@ header, footer {
 header { border-bottom: 1px solid var(--line); }
 footer { border-top: 1px solid var(--line); }
 .name { color: inherit; font-weight: 700; text-decoration: none; }
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.footer-links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 main {
   width: min(1280px, calc(100% - 48px));
@@ -136,8 +155,54 @@ h1 {
   border: 0;
 }
 
+.legal {
+  width: min(760px, 100%);
+  margin: 0;
+}
+
+.legal h1 {
+  margin-bottom: 52px;
+  font-size: clamp(52px, 9vw, 108px);
+  line-height: .9;
+}
+
+.legal h2 {
+  margin: 42px 0 14px;
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 620;
+  letter-spacing: -.025em;
+}
+
+.legal h3 {
+  margin: 28px 0 10px;
+  font-size: 18px;
+}
+
+.legal p,
+.legal li {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.legal ul {
+  padding-left: 22px;
+}
+
+.legal a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.legal address {
+  font-style: normal;
+  line-height: 1.7;
+}
+
 @media (max-width: 640px) {
   header, footer, main { width: min(100% - 30px, 1280px); }
+  footer { align-items: flex-start; }
   h1 { font-size: clamp(64px, 22vw, 108px); }
   .video { margin-top: 52px; }
+  .footer-links { gap: 10px 16px; }
 }
