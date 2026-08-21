@@ -3,8 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Alexander Korte">
-  <title>Alexander Korte</title>
+  <title>Alexander Korte | Unternehmer und Immobilieninvestor</title>
+  <meta name="description" content="Alexander Korte ist Berliner Unternehmer, Immobilieninvestor und Projektentwickler mit mehr als 20 Jahren Erfahrung.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://alexanderkorte.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="Alexander Korte">
+  <meta property="og:title" content="Alexander Korte | Unternehmer und Immobilieninvestor">
+  <meta property="og:description" content="Berliner Unternehmer, Immobilieninvestor und Projektentwickler mit mehr als 20 Jahren Erfahrung.">
+  <meta property="og:url" content="https://alexanderkorte.com/">
+  <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,15 +29,11 @@
 
     <section class="video" aria-labelledby="video-title">
       <p class="video-label" id="video-title">Video</p>
-      <div class="video-frame">
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/TDe1DqxwJoc"
-          title="Video von Alexander Korte"
-          loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
+      <div class="video-frame" id="video-frame">
+        <button class="video-consent" id="load-video" type="button">
+          <strong>Video auf YouTube ansehen</strong>
+          <span>Mit dem Klick wird eine Verbindung zu YouTube hergestellt. Dabei können personenbezogene Daten an Google übermittelt werden.</span>
+        </button>
       </div>
     </section>
   </main>
@@ -37,5 +42,17 @@
     <span>© 2026</span>
     <span>alexanderkorte.com</span>
   </footer>
+
+  <script>
+    document.getElementById('load-video').addEventListener('click', function () {
+      const iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube-nocookie.com/embed/TDe1DqxwJoc?autoplay=1';
+      iframe.title = 'Video von Alexander Korte';
+      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.allowFullscreen = true;
+      document.getElementById('video-frame').replaceChildren(iframe);
+    });
+  </script>
 </body>
 </html>
