@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impressum | Alexander Korte</title>
+  <meta name="description" content="Impressum von alexanderkorte.com">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://alexanderkorte.com/impressum.html">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a class="name" href="/">Alexander Korte</a>
+    <span>Berlin</span>
+  </header>
+  <main>
+    <article class="legal">
+      <p class="eyebrow">Rechtliches</p>
+      <h1>Impressum</h1>
+      <h2>Angaben gemäß § 5 DDG</h2>
+      <address>
+        Alexander Korte<br>
+        c/o SAG Schöneberg Immobilien AG<br>
+        Zehrensdorfer Str. 4<br>
+        15806 Zossen<br>
+        Deutschland
+      </address>
+      <h2>Kontakt</h2>
+      <p>E-Mail: <span class="protected-email"></span><noscript>impressum [at] alexanderkorte [dot] com</noscript></p>
+      <h2>Verantwortlich für journalistisch-redaktionelle Inhalte</h2>
+      <address>
+        Alexander Korte<br>
+        c/o SAG Schöneberg Immobilien AG<br>
+        Zehrensdorfer Str. 4<br>
+        15806 Zossen
+      </address>
+      <h2>Verbraucherstreitbeilegung</h2>
+      <p>Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+    </article>
+  </main>
+  <footer>
+    <span>© 2026</span>
+    <nav class="footer-links" aria-label="Rechtliche Hinweise">
+      <a href="/">Startseite</a>
+      <a href="/impressum.html" aria-current="page">Impressum</a>
+      <a href="/datenschutz.html">Datenschutz</a>
+    </nav>
+  </footer>
+  <script>
+    (() => {
+      const local = ['im', 'press', 'um'].join('');
+      const host = ['alexander', 'korte'].join('') + '.' + ['c', 'om'].join('');
+      const address = local + '@' + host;
+      document.querySelectorAll('.protected-email').forEach((element) => {
+        const link = document.createElement('a');
+        link.href = 'mailto:' + address;
+        link.textContent = address;
+        element.replaceChildren(link);
+      });
+    })();
+  </script>
+</body>
+</html>
