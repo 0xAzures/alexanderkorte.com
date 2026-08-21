@@ -88,10 +88,45 @@ h1 {
 }
 
 .video-frame {
+  position: relative;
   overflow: hidden;
   aspect-ratio: 16 / 9;
   border: 1px solid var(--line);
-  background: #000;
+  background: #171b19;
+}
+
+.video-consent {
+  width: 100%;
+  height: 100%;
+  padding: clamp(24px, 6vw, 68px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border: 0;
+  background:
+    radial-gradient(circle at 78% 24%, rgba(168, 191, 154, .25), transparent 35%),
+    #171b19;
+  color: #efeee9;
+  text-align: left;
+  cursor: pointer;
+}
+
+.video-consent strong {
+  display: block;
+  max-width: 620px;
+  font-size: clamp(24px, 4vw, 50px);
+  font-weight: 570;
+  line-height: 1.05;
+  letter-spacing: -.035em;
+}
+
+.video-consent span {
+  display: block;
+  margin-top: 18px;
+  color: rgba(239, 238, 233, .72);
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 .video-frame iframe {
