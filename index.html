@@ -27,21 +27,11 @@
   </header>
 
   <main>
-    <p class="eyebrow">Website in Vorbereitung</p>
     <h1>Alexander<br>Korte</h1>
     <p class="positioning">Ich bin Unternehmer und Investor. Unter Self-Sovereignty entwickle ich Projekte, die wirtschaftliche Unabhängigkeit, persönliche Freiheit und selbstbestimmtes Leben miteinander verbinden.</p>
 
     <p class="positioning">Ich investiere in langfristig vermietete Betriebsimmobilien in Berlin-Brandenburg, Mecklenburg-Vorpommern und selektiv im Raum Leipzig-Halle.<br><a class="positioning-link" href="https://www.mvj.de">Immobilienaktivitäten der MVJ Beteiligungs GmbH</a></p>
 
-    <section class="video" aria-labelledby="video-title">
-      <p class="video-label" id="video-title">Video</p>
-      <div class="video-frame" id="video-frame">
-        <button class="video-consent" id="load-video" type="button">
-          <strong>Video auf YouTube ansehen</strong>
-          <span>Mit dem Klick wird eine Verbindung zu YouTube hergestellt. Dabei können personenbezogene Daten an Google übermittelt werden.</span>
-        </button>
-      </div>
-    </section>
   </main>
 
   <footer>
@@ -54,16 +44,5 @@
     </nav>
   </footer>
 
-  <script>
-    document.getElementById('load-video').addEventListener('click', function () {
-      const iframe = document.createElement('iframe');
-      iframe.src = 'https://www.youtube-nocookie.com/embed/TDe1DqxwJoc?autoplay=1';
-      iframe.title = 'Video von Alexander Korte';
-      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-      iframe.allowFullscreen = true;
-      document.getElementById('video-frame').replaceChildren(iframe);
-    });
-  </script>
 </body>
 </html>
