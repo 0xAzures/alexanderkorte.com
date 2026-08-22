@@ -398,3 +398,176 @@ h1 {
   color: inherit;
   text-underline-offset: 4px;
 }
+
+
+.coinvest {
+  width: min(980px, 100%);
+}
+
+.coinvest h1 {
+  margin-bottom: 38px;
+  font-size: clamp(58px, 10vw, 128px);
+  line-height: .86;
+}
+
+.coinvest-intro {
+  max-width: 820px;
+  margin: 0 0 54px;
+  font-size: clamp(19px, 2.2vw, 27px);
+  line-height: 1.5;
+}
+
+.coinvest-principles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin-bottom: 76px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.coinvest-principles article {
+  padding: 30px;
+  background: var(--paper);
+}
+
+.coinvest-principles h2 {
+  margin: 0 0 14px;
+  font-size: 22px;
+}
+
+.coinvest-principles p,
+.coinvest-heading p,
+.coinvest-note {
+  line-height: 1.65;
+}
+
+.coinvest-form {
+  max-width: 900px;
+  padding-top: 54px;
+  border-top: 1px solid var(--line);
+}
+
+.coinvest-heading {
+  max-width: 760px;
+  margin-bottom: 38px;
+}
+
+.coinvest-heading h2 {
+  margin: 0 0 14px;
+  font-size: clamp(30px, 5vw, 54px);
+  letter-spacing: -.04em;
+}
+
+.coinvest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 20px;
+}
+
+.coinvest-form label,
+.coinvest-form legend {
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: .08em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.coinvest-form input,
+.coinvest-form select,
+.coinvest-form textarea {
+  width: 100%;
+  min-height: 56px;
+  margin-top: 9px;
+  padding: 14px 15px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: rgba(255, 255, 255, .35);
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px;
+}
+
+.coinvest-form textarea {
+  resize: vertical;
+}
+
+.coinvest-form input:focus,
+.coinvest-form select:focus,
+.coinvest-form textarea:focus {
+  outline: 2px solid #476141;
+  outline-offset: 2px;
+}
+
+.coinvest-form fieldset {
+  margin: 34px 0;
+  padding: 25px;
+  border: 1px solid var(--line);
+}
+
+.coinvest-form legend {
+  padding: 0 8px;
+}
+
+.coinvest-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 12px 0;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.55 !important;
+  text-transform: none !important;
+}
+
+.coinvest-check input {
+  flex: 0 0 auto;
+  width: 18px;
+  min-height: 18px;
+  margin: 2px 0 0;
+  padding: 0;
+}
+
+.coinvest-wide {
+  display: block;
+  margin: 30px 0;
+}
+
+.coinvest-confirm {
+  max-width: 820px;
+}
+
+.coinvest-confirm a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+.coinvest-note {
+  max-width: 800px;
+  margin-top: 30px;
+  color: rgba(23, 27, 25, .7);
+  font-size: 13px;
+}
+
+.coinvest-status {
+  min-height: 24px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+  .coinvest-principles,
+  .coinvest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .coinvest-principles {
+    gap: 0;
+  }
+
+  .coinvest-principles article + article {
+    border-top: 1px solid var(--line);
+  }
+}
