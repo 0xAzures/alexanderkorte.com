@@ -629,12 +629,28 @@ h1 {
 }
 
 @media (max-width: 760px) {
+  main {
+    padding: 42px 0;
+  }
+
+  .positioning {
+    margin-top: 28px !important;
+  }
+
   .track-record,
   .investment-focus {
-    margin-top: 64px;
+    margin-top: 38px;
+    padding-top: 0;
+    border-top: 0;
   }
 
   .track-record-grid {
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 26px;
+  }
+
+  .track-record-grid div {
+    min-height: 130px;
+    padding: 20px;
   }
 }
