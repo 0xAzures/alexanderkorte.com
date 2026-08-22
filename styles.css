@@ -601,7 +601,7 @@ h1 {
 
 .track-record-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1px;
   margin-top: 42px;
   border: 1px solid var(--line);
