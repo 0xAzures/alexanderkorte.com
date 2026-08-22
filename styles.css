@@ -571,3 +571,70 @@ h1 {
     border-top: 1px solid var(--line);
   }
 }
+
+
+.track-record,
+.investment-focus {
+  max-width: 1040px;
+  margin-top: 88px;
+  padding-top: 48px;
+  border-top: 1px solid var(--line);
+}
+
+.track-record h2,
+.investment-focus h2 {
+  max-width: 850px;
+  margin: 0 0 20px;
+  font-size: clamp(34px, 5vw, 62px);
+  font-weight: 590;
+  line-height: 1;
+  letter-spacing: -.045em;
+}
+
+.track-record > p:not(.eyebrow),
+.investment-focus > p:not(.eyebrow) {
+  max-width: 820px;
+  margin: 0;
+  font-size: clamp(17px, 2vw, 22px);
+  line-height: 1.6;
+}
+
+.track-record-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  margin-top: 42px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.track-record-grid div {
+  min-height: 165px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--paper);
+}
+
+.track-record-grid strong {
+  font-size: clamp(28px, 3.2vw, 46px);
+  font-weight: 590;
+  letter-spacing: -.045em;
+}
+
+.track-record-grid span {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+@media (max-width: 760px) {
+  .track-record,
+  .investment-focus {
+    margin-top: 64px;
+  }
+
+  .track-record-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
