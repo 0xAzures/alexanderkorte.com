@@ -304,8 +304,6 @@ h1 {
 
 .newsletter-form {
   max-width: 740px;
-  padding-top: 34px;
-  border-top: 1px solid var(--line);
 }
 
 .newsletter-field {
